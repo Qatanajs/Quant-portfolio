@@ -1,0 +1,12 @@
+# Ignore downloaded data
+01_market-data-analysis/data/*.csv
+01_market-data-analysis/data/*.json
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore local environment files
+.env
+venv/
+.ipynb_checkpoints/
