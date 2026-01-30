@@ -1,20 +1,14 @@
-01. Market Data Analysis
-​Goal
-​To develop a robust automated pipeline for collecting, cleaning, and visualizing historical FX and stock market data, forming the foundation for quantitative strategy development.
-​Data
-​Sources: Yahoo Finance API (yfinance)
-​Assets:
-​Forex: EUR/USD, USD/JPY
-​Equities: AAPL, MSFT
-​Features: Open, High, Low, Close, Adj Close, Volume
-​Steps Completed (Week 1)
-​Automated Ingestion: Developed download_data.py to fetch historical time-series data using Python and yfinance.
-​Data Persistence: Implemented cleaning protocols to handle multi-index headers and saved finalized data as CSV files.
-​Exploratory Data Analysis (EDA):
-​Calculated Descriptive Statistics (mean, std dev, skewness).
-​Audited for Missing Values and data gaps.
-​Visualization:
-​Time-series plots of Closing Prices.
-​Histograms of Daily Returns to analyze distribution.
-​Technical overlays: 20-day & 50-day Simple Moving Averages (SMA).
-​Output: Successfully partitioned and saved processed data in the /data directory for downstream backtesting.
+# Market Data Analysis 📈
+
+## Overview
+This module focuses on the ingestion and exploratory analysis of financial time series. The goal is to establish a clean data pipeline for AAPL and EUR/USD to serve as the foundation for future backtesting.
+
+## Key Technical Achievements
+* **Automated Ingestion:** Developed scripts to pull historical data using the `yfinance` API.
+* **Data Cleaning:** Implemented forward-filling (`ffill`) logic to handle missing timestamps in FX data.
+* **Statistical Analysis:** Calculated Log Returns to ensure time-series additivity for future modeling.
+* **Visualization:** Built technical overlays including 20-day and 50-day Simple Moving Averages (SMA).
+
+## Insights
+* Observed a bullish crossover on the AAPL 20/50 SMA during [Insert Date].
+* Confirmed that log returns for EUR/USD exhibit "fat tails," deviating from a standard normal distribution—a key risk factor for Project 03 (Risk Management).
