@@ -1,10 +1,9 @@
 # Market Data Analysis 📈
 
 ## 📊 Interactive Analysis Report
-* **Direct Link:** [View Static HTML Report](./notebooks/market_analysis.html)
-* **Web Preview:** [🚀 Open Interactive Report (Browser)](https://htmlpreview.github.io/?https://github.com/Qatanajs/Quant-portfolio/blob/main/01_market-data-analysis/notebooks/market_analysis.html)
+* **Direct Link:** [View Static HTML Report](./results/market_analysis.html)
+* **Web Preview:** [🚀 Open Interactive Report (Browser)](https://htmlpreview.github.io/?https://github.com/Qatanajs/Quant-portfolio/blob/main/01_market-data-analysis/results/market_analysis.html)
 
----
 
 ## Overview
 This module focuses on the ingestion and exploratory analysis of financial time series. The goal is to establish a clean data pipeline for AAPL and EUR/USD to serve as the foundation for future backtesting.
